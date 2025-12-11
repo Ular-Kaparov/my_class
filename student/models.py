@@ -4,9 +4,9 @@ class Student(models.Model):
     name = models.CharField(max_length=100)
     
     STATUS_CHOICES = [
-        ("present", "Пришёл"),
-        ("absent", "Не пришёл"),
-        ("none", "Не отмечен"),
+        ("пришел", "Пришёл"),
+        ("не пришел", "Не пришёл"),
+        ("не отмечен", "Не отмечен"),
     ]
     
     status = models.CharField(max_length=10, choices=STATUS_CHOICES,)
